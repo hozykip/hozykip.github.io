@@ -1,0 +1,15 @@
+import React from "react";
+
+export default function QuickContact() {
+  return (
+    <div className="quick_contact">
+      <a href="whatsapp://254702127533">
+        <img src="images/whatsapp-48.png" alt="WhatsApp" />
+      </a>
+      <br />
+      <a href="whatsapp://254702127533">
+        <img src="images/whatsapp-48.png" alt="WhatsApp" />
+      </a>
+    </div>
+  );
+}

@@ -30,9 +30,12 @@ function App() {
     // });
 
     //implement smooth scroll using smooth-scroll library
-    const smooth = new SmoothScroll('.nav-links a[href*="#"]', {
-      speed: 800,
-    });
+    const smooth = new SmoothScroll(
+      '.nav-links a[href*="#"], .logo a[href*="#"]',
+      {
+        speed: 800,
+      }
+    );
   });
   return (
     <div className="App">

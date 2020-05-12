@@ -5,7 +5,7 @@ body {
   font-family: "Work Sans", sans-serif;
   background-color: rgb(20, 20, 20);
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.8;
   font-weight: 100;
   /* overflow: hidden; */
@@ -17,13 +17,14 @@ body {
 }
 
 .page {
-  height: 100vh;
+  min-height: 100vh;
   padding: 1rem;
-  background-color: #f8f9fa !important;
-  color: #464646;
+  color: #f8f9fa !important;
+  background-color: #101010;
   /* scroll-snap-align: center; */
-  height: 100vh;
+  /* height: 100vh; */
 }
+
 .page h1 {
   font-size: 3rem;
   line-height: 3rem;
@@ -31,7 +32,7 @@ body {
   /* letter-spacing: 0.3rem; */
   margin: 0 0 0.5rem 0;
   cursor: pointer;
-  color: rgb(228, 58, 185);
+  color: #d45e07cf;
 }
 
 h1 {
@@ -65,17 +66,19 @@ nav.sticky {
   opacity: 1;
   color: rgb(231, 227, 227);
 }
-.logo {
+.logo a {
   color: rgb(231, 227, 227);
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 800;
   font-size: 1.5em;
+  text-decoration: none;
 }
 .nav-links {
   display: flex;
   justify-content: space-around;
   width: 40%;
+  text-transform: uppercase;
 }
 
 .nav-links a {
@@ -86,10 +89,10 @@ nav.sticky {
   font-weight: 600;
 }
 .nav-links li a:hover {
-  color: rgb(228, 58, 185);
+  color: #d45e07cf;
 }
 .activeLink {
-  color: rgb(228, 58, 185) !important;
+  color: #d45e07cf !important;
 }
 .burger {
   display: none;
@@ -128,7 +131,7 @@ nav.sticky {
   letter-spacing: 0.6rem;
   margin: 0 0 0.5rem 0;
   cursor: pointer;
-  color: rgb(228, 58, 185);
+  color: #d45e07cf;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
@@ -147,15 +150,17 @@ nav.sticky {
 }
 
 .quick_contact {
-  background-color: white;
+  background-color: none;
   display: inline-block;
   padding: 0.1rem;
-  margin-left: 0.3rem;
-  border-radius: 20%;
+  /* margin-left: 0.3rem; */
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 15%;
+  padding: 0.5rem;
   position: fixed;
   top: 50vh;
   z-index: 10;
-  box-shadow: 2px 2px 6px 2px rgba(43, 39, 39, 0.452);
+  box-shadow: 1px 1px 3px 1px #d45e07cf;
 }
 
 .quick_contact img {

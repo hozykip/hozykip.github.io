@@ -11,9 +11,11 @@ import {
   faCheckSquare,
   faCoffee,
   faBars,
+  faInfo,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faCheckSquare, faCoffee, faBars);
+library.add(fab, faCheckSquare, faCoffee, faBars, faInfo, faUser);
 
 ReactDOM.render(
   <React.StrictMode>

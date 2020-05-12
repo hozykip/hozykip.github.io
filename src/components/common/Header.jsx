@@ -13,6 +13,11 @@ export default class Header extends Component {
   handleLinkClick = (event) => {
     document.querySelector(".activeLink") &&
       document.querySelector(".activeLink").classList.remove("activeLink");
+
+    if (event.target.parentElement.id === "logoTitle") {
+      document.querySelector("#home_link").classList.add("activeLink");
+      return;
+    }
     event.target.classList.add("activeLink");
   };
 
@@ -44,11 +49,15 @@ export default class Header extends Component {
         <header>
           <nav>
             <div className="logo">
-              <h2>Hozy</h2>
+              <h2 id="logoTitle">
+                <a href="#home" onClick={this.handleLinkClick} classList="">
+                  Hozy
+                </a>
+              </h2>
             </div>
             <ul className="nav-links">
               <li>
-                <a href="#home" onClick={this.handleLinkClick}>
+                <a href="#home" onClick={this.handleLinkClick} id="home_link">
                   {" "}
                   Home{" "}
                 </a>

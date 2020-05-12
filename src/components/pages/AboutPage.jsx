@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutPage() {
   return (
-    <section className="about_page page">
+    <section className="about_page page" id="about">
       <main>
         <h1>Who am I?</h1>
         <div>
@@ -20,22 +20,19 @@ export default function AboutPage() {
           </div>
           <article>
             <p>
-              React is a JavaScript library, and so we’ll assume you have a
-              basic understanding of the JavaScript language. If you don’t feel
-              very confident, we recommend going through a JavaScript tutorial
-              to check your knowledge level and enable you to follow along this
-              guide without getting lost. It might take you between 30 minutes
-              and an hour, but as a result you won’t have to feel like you’re
-              learning both React and JavaScript at the same time.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              voluptatibus voluptate laboriosam quibusdam inventore, atque aut
+              in velit at exercitationem quis animi sint eos magnam! In atque,
+              enim magnam ea voluptatem est. Et, sequi vero temporibus laborum
+              adipisci ullam culpa?
             </p>
             <p>
-              React is a JavaScript library, and so we’ll assume you have a
-              basic understanding of the JavaScript language. If you don’t feel
-              very confident, we recommend going through a JavaScript tutorial
-              to check your knowledge level and enable you to follow along this
-              guide without getting lost. It might take you between 30 minutes
-              and an hour, but as a result you won’t have to feel like you’re
-              learning both React and JavaScript at the same time.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+              ipsa recusandae quae aspernatur, et id. Repellat deserunt
+              obcaecati, commodi totam nobis molestiae quae nemo quas nihil
+              recusandae beatae quam sunt natus, inventore provident neque
+              quisquam iure esse facere quod fuga veritatis ipsam! Nihil
+              praesentium, accusamus nobis laborum autem modi iusto.
             </p>
           </article>
         </div>

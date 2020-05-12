@@ -8,6 +8,30 @@ body {
   font-size: 1.2rem;
   line-height: 1.8;
   font-weight: 100;
+  /* overflow: hidden; */
+}
+.App {
+  /* overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory; */
+}
+
+.page {
+  height: 100vh;
+  padding: 1rem;
+  background-color: #f8f9fa !important;
+  color: #464646;
+  /* scroll-snap-align: center; */
+  height: 100vh;
+}
+.page h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 900;
+  /* letter-spacing: 0.3rem; */
+  margin: 0 0 0.5rem 0;
+  cursor: pointer;
+  color: rgb(228, 58, 185);
 }
 
 h1 {
@@ -35,7 +59,7 @@ nav {
 }
 nav.sticky {
   background-color: black;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .sticky .nav-links {
   opacity: 1;
@@ -77,22 +101,6 @@ nav.sticky {
   margin: 5px;
 }
 /* End Nav */
-
-.page {
-  min-height: 100vh;
-  padding: 1rem;
-  background-color: #f8f9fa !important;
-  color: #464646;
-}
-.page h1 {
-  font-size: 3rem;
-  line-height: 3rem;
-  font-weight: 900;
-  /* letter-spacing: 0.3rem; */
-  margin: 0 0 0.5rem 0;
-  cursor: pointer;
-  color: rgb(228, 58, 185);
-}
 
 .home_page {
   background-repeat: no-repeat;

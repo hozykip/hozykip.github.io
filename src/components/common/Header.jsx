@@ -48,33 +48,33 @@ export default class Header extends Component {
             </div>
             <ul className="nav-links">
               <li>
-                <a href="#Home" onClick={this.handleLinkClick}>
+                <a href="#home" onClick={this.handleLinkClick}>
                   {" "}
                   Home{" "}
                 </a>
               </li>
               <li>
-                <a href="#About" onClick={this.handleLinkClick}>
+                <a href="#about" onClick={this.handleLinkClick}>
                   About
                 </a>
               </li>
-              <li>
-                <a href="#Skills" onClick={this.handleLinkClick}>
+              {/* <li>
+                <a href="#skills" onClick={this.handleLinkClick}>
                   Skills
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a href="#Job" onClick={this.handleLinkClick}>
+                <a href="#job" onClick={this.handleLinkClick}>
                   Work
                 </a>
               </li>
               <li>
-                <a href="#Projects" onClick={this.handleLinkClick}>
+                <a href="#projects" onClick={this.handleLinkClick}>
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#Contact" onClick={this.handleLinkClick}>
+                <a href="#contact" onClick={this.handleLinkClick}>
                   Contact
                 </a>
               </li>

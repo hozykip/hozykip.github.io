@@ -25,7 +25,7 @@ header {
   top: 0;
   right: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 1000;
 }
 
 /* Navigation menu */
@@ -179,7 +179,7 @@ h5 {
 }
 .page main {
   padding: 3rem 0 0 0;
-  width: 70%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -293,6 +293,157 @@ h5 {
   height: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+/* SKILLS */
+.skills_container {
+  margin: 2rem 0;
+  /* border: solid thin yellowgreen; */
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.skills_container > h2 {
+  text-align: center;
+}
+.skill {
+  margin: 1rem 0;
+  display: flex;
+}
+.skill > .lang {
+  width: 20%;
+}
+.skills_container > h2 {
+  color: #d45e07cf;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 100;
+}
+
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #191919;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+  stroke-dasharray: 310;
+  stroke-dashoffset: 310;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(310 - (310 * 75) / 100);
+  stroke: #00ff43;
+}
+
+.skills {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills > .card {
+  width: 19.5%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, #1b1b1b, #222222, #1b1b1b);
+  height: 250px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.skills > .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0.5);
+}
+
+.skills > .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(255, 255, 255, 0.03); */
+  pointer-events: none;
+}
+.percent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
+  /* box-shadow: inset 0 0 100px #000; */
+  /* background: #222; */
+  z-index: 100;
+}
+
+.percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.num_percentage {
+  color: #777;
+  font-weight: 700;
+  font-size: 1.8rem;
+  transition: 0.5s;
+}
+
+.num_percentage span {
+  font-size: #777;
+  font-size: 0.8rem;
+}
+
+.card:hover .num_percentage {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.text {
+  color: #777;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.card:hover .text {
+  color: #fff;
+  font-weight: 500;
+}
+
 article {
   width: 50%;
   margin-left: auto;
@@ -309,7 +460,7 @@ article {
   margin-left: auto;
 }
 .about_page > main > div {
-  width: 60%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -351,7 +502,7 @@ article {
     width: 60%;
   }
   .about_page > main > div {
-    width: 80%;
+    width: 90%;
   }
   .job_title {
     width: 35%;
@@ -364,6 +515,38 @@ article {
     height: 1.5rem;
     left: 35%;
     margin: 1.5rem 0;
+  }
+
+  /* SKILLS */
+  .skills > .card {
+    width: 30%;
+    margin-top: 1rem;
+    height: 220px;
+    border-radius: 5px;
+  }
+
+  .skills > .card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0.5);
+  }
+
+  .num_percentage {
+    color: #777;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  .num_percentage span {
+    font-size: #777;
+    font-size: 0.8rem;
+  }
+
+  .card:hover .num_percentage {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
   }
 }
 
@@ -500,6 +683,38 @@ article {
     flex: 1;
     padding: 0.7rem 0 0 0.9rem;
   }
+
+  /* SKILLS */
+  .skills > .card {
+    width: 45%;
+    margin-top: 1rem;
+    height: 220px;
+    border-radius: 5px;
+  }
+
+  .skills > .card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0.5);
+  }
+
+  .num_percentage {
+    color: #777;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  .num_percentage span {
+    font-size: #777;
+    font-size: 0.8rem;
+  }
+
+  .card:hover .num_percentage {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -543,11 +758,11 @@ article {
     flex-flow: row;
   }
   .about_page > main {
-    padding: 1rem 0 0 0;
+    padding: 0.7rem 0 0 0;
     width: 100%;
   }
   .about_page > main > div {
-    width: 90%;
+    width: 100%;
   }
   .about_page h1 {
     text-align: center;
@@ -602,7 +817,7 @@ article {
   /* JOB PAGE */
   .page main {
     padding: 2rem 0 0 0;
-    width: 95%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -639,5 +854,37 @@ article {
   h5 {
     font-size: 0.8rem;
     font-weight: 400;
+  }
+
+  /* SKILLS */
+  .skills > .card {
+    width: 48%;
+    margin-top: 3px;
+    height: 200px;
+    border-radius: 2px;
+  }
+
+  .skills > .card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0.5);
+  }
+
+  .num_percentage {
+    color: #777;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  .num_percentage span {
+    font-size: #777;
+    font-size: 0.6rem;
+  }
+
+  .card:hover .num_percentage {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 0.7rem;
   }
 }

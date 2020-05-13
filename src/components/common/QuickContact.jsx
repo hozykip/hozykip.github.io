@@ -7,8 +7,8 @@ export default function QuickContact() {
         <img src="images/whatsapp-48.png" alt="WhatsApp" />
       </a>
       <br />
-      <a href="whatsapp://254702127533">
-        <img src="images/whatsapp-48.png" alt="WhatsApp" />
+      <a href="mailto: kiprutohosea05@gmail.com">
+        <img src="images/gmail-48.png" alt="WhatsApp" />
       </a>
     </div>
   );

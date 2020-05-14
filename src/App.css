@@ -135,8 +135,6 @@ nav.sticky {
   background-color: none;
   display: inline-block;
   padding: 0.1rem;
-  border-top-right-radius: 15%;
-  border-bottom-right-radius: 15%;
   padding: 0.5rem;
   position: fixed;
   top: 50vh;
@@ -488,7 +486,7 @@ article {
 .about_page .about_img_big {
   opacity: 1;
   width: 0;
-  border-radius: 50%;
+  border-radius: 1%;
   /* margin: 0.8rem 1rem 0 0; */
   position: absolute;
   z-index: 10;
@@ -559,6 +557,10 @@ article {
   font-size: 1.2rem;
   color: #ae4f1f;
   text-transform: uppercase;
+  text-transform: capitalize;
+  position: relative;
+  left: -100%;
+  opacity: 0;
 }
 
 .portfolio_container > .portfolio > .back > a {
@@ -594,15 +596,29 @@ article {
   left: 0%;
   width: 100%;
   text-align: center;
-  text-transform: capitalize;
 }
 
 .portfolio_flip > .front {
-  animation: portfolioFlipFront 1.5s ease-in-out 0s normal forwards;
+  animation: portfolioFlipFront 1s ease-in-out 0s normal forwards;
 }
 
 .portfolio_flip > .back {
-  animation: portfolioFlipBack 1.5s ease-in-out 0s normal forwards;
+  animation: portfolioFlipBack 1s ease-in-out 0s normal forwards;
+}
+
+.portfolio_flip .proj_title {
+  animation: portfolioFlipTitle 0.5s ease-in-out 1s normal forwards;
+}
+
+@keyframes portfolioFlipTitle {
+  from {
+    left: -20%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes portfolioFlipFront {
@@ -621,14 +637,6 @@ article {
     transform: perspective(1000px) rotateY(0deg);
   }
 }
-
-/* .portfolio:hover > .front {
-  transform: perspective(1000px) rotateY(-180deg);
-}
-
-.portfolio:hover > .back {
-  transform: perspective(1000px) rotateY(0deg);
-} */
 
 /* MEDIA QUERIES */
 
@@ -811,7 +819,7 @@ article {
   .about_page .about_img_big {
     opacity: 1;
     width: 0;
-    border-radius: 50%;
+    border-radius: 1%;
     z-index: 10;
   }
   .about_page > main article {
@@ -920,7 +928,6 @@ article {
     top: auto;
     bottom: 3vh;
     margin-left: 0.1rem;
-    border-radius: 20%;
   }
   .quick_contact img {
     width: 1rem;
@@ -959,7 +966,7 @@ article {
   }
   .about_page .about_img_big {
     width: 0;
-    border-radius: 50%;
+    border-radius: 1%;
     position: absolute;
   }
   .about_page > main > div {

@@ -8,12 +8,12 @@ export default function AboutPage() {
         <div>
           <div className="about_img_container">
             <img
-              src="images/hozy_prof.jpg"
+              src="images/profile2.jpg"
               alt="Hozy Kip"
               className="about_img"
             />
             <img
-              src="images/hozy_prof.jpg"
+              src="images/profile1.jpg"
               alt="Hozy Kip"
               className="about_img_big"
             />

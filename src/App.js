@@ -12,6 +12,8 @@ import $ from "jquery"; //eslint-disable-line
 import SmoothScroll from "smooth-scroll";
 import ProjectsPage from "./components/pages/ProjectsPage";
 import ContactPage from "./components/pages/ContactPage";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   useEffect(() => {
@@ -30,7 +32,7 @@ function App() {
     // });
 
     //implement smooth scroll using smooth-scroll library
-    const smooth = new SmoothScroll(
+    const smooth = new SmoothScroll( // eslint-disable-line
       '.nav-links a[href*="#"], .logo a[href*="#"]',
       {
         speed: 800,
@@ -46,6 +48,7 @@ function App() {
       <WorkPage />
       <ProjectsPage />
       <ContactPage />
+      <ToastContainer autoClose={5000} hideProgressBar={false} />
     </div>
   );
 }

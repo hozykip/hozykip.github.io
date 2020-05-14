@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import ContactForm from "./ContactForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { base, app } from "../../base";
+import { base, app } from "../../base"; // eslint-disable-line
 import moment from "moment";
 import { toast } from "react-toastify";
 
 export default function ContactPage() {
   const [contact, setContact] = useState({});
   const [errors, setErrors] = useState({});
-  const [saving, setSaving] = useState(false);
+  const [saving, setSaving] = useState(false); // eslint-disable-line
 
   useEffect(() => {});
 

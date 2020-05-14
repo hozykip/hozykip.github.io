@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // eslint-disable-next-line
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // eslint-disable-line
 import Navigation from "./Navigation"; // eslint-disable-line
 
 export default class Header extends Component {

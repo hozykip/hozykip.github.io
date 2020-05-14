@@ -78,8 +78,8 @@ export default class Header extends Component {
                 </a>
               </li>
               <li>
-                <a href="#projects" onClick={this.handleLinkClick}>
-                  Projects
+                <a href="#portfolio" onClick={this.handleLinkClick}>
+                  Portfolio
                 </a>
               </li>
               <li>

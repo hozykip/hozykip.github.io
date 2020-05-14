@@ -1,32 +1,130 @@
 import React from "react";
 
+function handlePortfolioCLick(event) {
+  const flippedElements = document.querySelectorAll(".portfolio_flip");
+  flippedElements.forEach((el, index) => {
+    el !== event.target.closest(".portfolio") &&
+      el.classList.remove("portfolio_flip");
+  });
+  event.target.closest(".portfolio").classList.add("portfolio_flip");
+}
+
+function handleMouseOut(event) {
+  event.target.closest(".portfolio").classList.remove("portfolio_flip");
+}
+
 export default function ProjectsPage() {
   return (
-    <section className="about_page page" id="projects">
+    <section className="projects_page page" id="portfolio">
       <main>
-        <h1>Projects</h1>
+        <h1>Portfolio</h1>
         <div>
-          <div className="about_img_container">
-            <img
-              src="images/hozy_prof.jpg"
-              alt="Hozy Kip"
-              className="about_img"
-            />
-            <img
-              src="images/hozy_prof.jpg"
-              alt="Hozy Kip"
-              className="about_img_big"
-            />
+          <div className="portfolio_container">
+            <div
+              className="portfolio"
+              onClick={handlePortfolioCLick}
+              onMouseOver={handlePortfolioCLick}
+              onMouseLeave={handleMouseOut}
+            >
+              <div className="front">
+                <img
+                  src="images/portfolio/sura-portfolio.png"
+                  alt="SuraImages"
+                />
+                <div className="project_title">Sura Images</div>
+              </div>
+              <div className="back">
+                <div>
+                  <h2 className="proj_title">Sura Images</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates perspiciatis accusantium eveniet odit dolorum
+                    dolores ducimus sequi id harum at!
+                  </p>
+                </div>
+
+                <a
+                  href="https://suraimages.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Check out
+                </a>
+              </div>
+            </div>
+            <div
+              className="portfolio"
+              onClick={handlePortfolioCLick}
+              onMouseOver={handlePortfolioCLick}
+              onMouseLeave={handleMouseOut}
+            >
+              <div className="front">
+                <img
+                  src="images/portfolio/afc-portfolio.png"
+                  alt="Africa Fairtrade Convention website"
+                />
+                <div className="project_title">
+                  {" "}
+                  Africa Fairtrade Convention website
+                </div>
+              </div>
+              <div className="back">
+                <div>
+                  <h2 className="proj_title">
+                    Africa Fairtrade Convention website
+                  </h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates perspiciatis accusantium eveniet odit dolorum
+                    dolores ducimus sequi id harum at!
+                  </p>
+                </div>
+                <a
+                  href="https://africafairtradeconvention.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Check out
+                </a>
+              </div>
+            </div>
+
+            <div
+              className="portfolio"
+              onClick={handlePortfolioCLick}
+              onMouseOver={handlePortfolioCLick}
+              onMouseLeave={handleMouseOut}
+            >
+              <div className="front">
+                <img
+                  src="images/portfolio/ngoma2.png"
+                  alt="Africa Fairtrade Convention Ngoma Portal"
+                />
+                <div className="project_title">
+                  Africa Fairtrade Convention Ngoma Portal
+                </div>
+              </div>
+              <div className="back">
+                <div>
+                  <h2 className="proj_title">
+                    Africa Fairtrade Convention Ngoma Portal
+                  </h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates perspiciatis accusantium eveniet odit dolorum
+                    dolores ducimus sequi id harum at!
+                  </p>
+                </div>
+                <a
+                  href="https://ngoma.africafairtradeconvention.com/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Check out
+                </a>
+              </div>
+            </div>
           </div>
-          <article>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              cum consequatur ratione voluptatibus, quod odit. Rem beatae aut
-              mollitia aspernatur incidunt. Consequuntur modi aperiam veritatis,
-              eius doloremque rem dolore cum.
-            </p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </article>
         </div>
       </main>
     </section>

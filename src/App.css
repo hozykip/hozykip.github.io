@@ -8,6 +8,7 @@ body {
   font-size: 1rem;
   line-height: 1.8;
   font-weight: 100;
+  overflow-x: hidden;
   /* overflow: hidden; */
 }
 .App {
@@ -149,11 +150,15 @@ nav.sticky {
 }
 .page {
   min-height: 100vh;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   color: #f8f9fa !important;
   background-color: #101010;
   /* scroll-snap-align: center; */
   /* height: 100vh; */
+}
+
+.page > main > h1 {
+  text-align: center;
 }
 
 .page h1 {
@@ -262,7 +267,7 @@ h5 {
 }
 
 .job_more_details {
-  animation: jobTasksSlide 1s ease-in-out 0s normal forwards;
+  animation: jobTasksSlide 1.5s ease-in-out 0s normal forwards;
 }
 
 .job_title #job_title + div {
@@ -495,6 +500,136 @@ article {
   padding: 0.8rem 0 0 1rem;
 }
 
+/* PORTFOLIO PAGE */
+.projects_page main {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio_container > .portfolio {
+  width: 49%;
+  margin: 0.5%;
+  height: 48vh;
+  float: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio_container > .portfolio > .front {
+  height: 48vh;
+  width: 43%;
+  /* border: solid thick red; */
+  position: absolute;
+  margin: 0.5%;
+  /* padding: 1rem; */
+  transform: perspective(1000rem) rotateY(0deg);
+  backface-visibility: hidden;
+  border-radius: 15px;
+  transition: 1.5s 0.2s;
+  cursor: pointer;
+}
+.portfolio_container > .portfolio > .back {
+  height: 48vh;
+  width: 43%;
+  /* border: solid thick yellow; */
+  position: absolute;
+  margin: 0.5%;
+  transform: perspective(1000rem) rotateY(180deg);
+  backface-visibility: hidden;
+  padding: 1rem 2rem;
+  background: #000000e8;
+  border-radius: 5px;
+  transition: 1.5s 0.2s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #b4b4b4;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.proj_title {
+  text-transform: capitalize;
+  padding: 0.3rem 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ae4f1f;
+  text-transform: uppercase;
+}
+
+.portfolio_container > .portfolio > .back > a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(212, 204, 204);
+  background: #803a15;
+  padding: 0.3rem 0.8rem;
+  font-weight: 500;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+.portfolio_container > .portfolio > .back > a:hover {
+  transform: translateY(-3px);
+  color: #fff;
+  background: #ae4f1f;
+  box-shadow: 0 2px 15px #000;
+}
+
+.portfolio_container > .portfolio img {
+  width: 100%;
+  height: 48vh;
+  opacity: 0.3;
+}
+
+.project_title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.portfolio_flip > .front {
+  animation: portfolioFlipFront 1.5s ease-in-out 0s normal forwards;
+}
+
+.portfolio_flip > .back {
+  animation: portfolioFlipBack 1.5s ease-in-out 0s normal forwards;
+}
+
+@keyframes portfolioFlipFront {
+  from {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateY(-180deg);
+  }
+}
+@keyframes portfolioFlipBack {
+  from {
+    transform: perspective(1000px) rotateY(180deg);
+  }
+  to {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+}
+
+/* .portfolio:hover > .front {
+  transform: perspective(1000px) rotateY(-180deg);
+}
+
+.portfolio:hover > .back {
+  transform: perspective(1000px) rotateY(0deg);
+} */
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1210px) {
@@ -715,6 +850,45 @@ article {
   .text {
     font-size: 0.9rem;
   }
+
+  /* PORTFOLIO PAGE */
+  .portfolio_container > .portfolio > .back {
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .proj_title {
+    padding: 0rem 0.3rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .portfolio_container > .portfolio > .back > a {
+    padding: 0.2rem 0.6rem;
+    font-weight: 400;
+    transition: 0.5s;
+    border-radius: 4px;
+    background: #ae4f1f;
+    color: #fff;
+  }
+
+  .portfolio_container > .portfolio > .back > a:hover {
+    box-shadow: 0 1px 10px #000;
+  }
+
+  .portfolio_container > .portfolio img {
+    width: 100%;
+    height: 48vh;
+    opacity: 0.3;
+  }
+
+  .project_title {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -886,5 +1060,63 @@ article {
 
   .text {
     font-size: 0.7rem;
+  }
+
+  /* PORTFOLIO PAGE */
+
+  .portfolio_container > .portfolio {
+    width: 90%;
+    margin: 4%;
+    height: 48vh;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .portfolio_container > .portfolio > .front {
+    width: 90%;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .portfolio_container > .portfolio > .back {
+    width: 85%;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .proj_title {
+    padding: 0rem 0.3rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .portfolio_container > .portfolio > .back > a {
+    padding: 0.2rem 0.6rem;
+    font-weight: 400;
+    transition: 0.5s;
+    border-radius: 4px;
+    background: #ae4f1f;
+    color: #fff;
+  }
+
+  .portfolio_container > .portfolio > .back > a:hover {
+    box-shadow: 0 1px 10px #000;
+  }
+
+  .portfolio_container > .portfolio img {
+    width: 100%;
+    height: 48vh;
+    opacity: 0.3;
+  }
+
+  .project_title {
+    font-size: 1.4rem;
+    font-weight: 700;
   }
 }

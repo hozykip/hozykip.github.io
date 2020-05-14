@@ -14,9 +14,23 @@ import {
   faInfo,
   faUser,
   faBriefcase,
+  faEnvelope,
+  faPhone,
+  faMapMarker,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faCheckSquare, faCoffee, faBars, faInfo, faUser, faBriefcase);
+library.add(
+  fab,
+  faCheckSquare,
+  faCoffee,
+  faBars,
+  faInfo,
+  faUser,
+  faBriefcase,
+  faEnvelope,
+  faPhone,
+  faMapMarker
+);
 
 ReactDOM.render(
   <React.StrictMode>

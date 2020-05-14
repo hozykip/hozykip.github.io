@@ -1,10 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import store from './app/store';
-import { Provider } from 'react-redux';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import store from "./app/store";
+import { Provider } from "react-redux";
+import * as serviceWorker from "./serviceWorker";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCheckSquare,
+  faCoffee,
+  faBars,
+  faInfo,
+  faUser,
+  faBriefcase,
+  faEnvelope,
+  faPhone,
+  faMapMarker,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+  fab,
+  faCheckSquare,
+  faCoffee,
+  faBars,
+  faInfo,
+  faUser,
+  faBriefcase,
+  faEnvelope,
+  faPhone,
+  faMapMarker
+);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,7 +38,7 @@ ReactDOM.render(
       <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -9,6 +9,10 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -39,5 +43,30 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBaXSzN6HeICpiiz30zRof5WMqC_FqqAYQ",
+        authDomain: "github-profile-b74cf.firebaseapp.com",
+        databaseURL: "https://github-profile-b74cf.firebaseio.com",
+        projectId: "github-profile-b74cf",
+        storageBucket: "github-profile-b74cf.appspot.com",
+        messagingSenderId: "514334714386",
+        appId: "1:514334714386:web:0aca61a39749cc8439c6cb",
+        measurementId: "G-06T3890MKZ",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>

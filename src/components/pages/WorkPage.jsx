@@ -53,13 +53,14 @@ function toggleMoreDetails(event) {
   const tasksDiv = parentDiv.getElementsByClassName("tasks")[0];
   const moreDetsSPan = parentDiv.querySelector("#job_details_more");
 
-  if (moreDetsSPan.innerHTML === "") {
-    moreDetsSPan.innerHTML = "Click for more details...";
-  } else {
-    moreDetsSPan.innerHTML = "";
-  }
+  // if (moreDetsSPan.innerHTML === "") {
+  //   moreDetsSPan.innerHTML = "Click for more details...";
+  // } else {
+  //   moreDetsSPan.innerHTML = "";
+  // }
 
-  tasksDiv.classList.toggle("job_more_details");
+  moreDetsSPan.innerHTML = "";
+  tasksDiv.classList.add("job_more_details");
 }
 
 export default function WorkPage() {

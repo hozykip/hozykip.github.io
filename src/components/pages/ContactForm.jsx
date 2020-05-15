@@ -1,7 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function ContactForm({ onSubmit, onChange, errors, onFocus }) {
+export default function ContactForm({
+  onSubmit,
+  onChange,
+  errors,
+  onFocus,
+  contact,
+  saving,
+}) {
   return (
     <>
       <form
@@ -19,6 +26,7 @@ export default function ContactForm({ onSubmit, onChange, errors, onFocus }) {
             placeholder="Email Address"
             onChange={onChange}
             onFocus={onFocus}
+            value={contact.email ? contact.email : ""}
           />
         </div>
 
@@ -31,6 +39,7 @@ export default function ContactForm({ onSubmit, onChange, errors, onFocus }) {
             placeholder="Name"
             onChange={onChange}
             onFocus={onFocus}
+            value={contact.name ? contact.name : ""}
           />
         </div>
 
@@ -43,22 +52,27 @@ export default function ContactForm({ onSubmit, onChange, errors, onFocus }) {
             placeholder="Subject"
             onChange={onChange}
             onFocus={onFocus}
+            value={contact.subject ? contact.subject : ""}
           />
         </div>
 
         <div className="form-control">
-          {errors.message && <span className="error">{errors.message}</span>}
+          <span className="error">{errors.message}</span>
+          {/* {errors.message && <span className="error">{errors.message}</span>} */}
           <textarea
             name="message"
             id=""
             placeholder="Message"
             onChange={onChange}
             onFocus={onFocus}
-          ></textarea>
+            value={contact.message ? contact.message : ""}
+          >
+            {contact.message ? contact.message : null}
+          </textarea>
         </div>
 
         <div className="form-control">
-          <button>Submit</button>
+          <button disabled={saving}>{saving ? "Sending..." : "Submit"}</button>
         </div>
       </form>
     </>
@@ -69,4 +83,6 @@ ContactForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
   errors: PropTypes.object.isRequired,
+  contact: PropTypes.object.isRequired,
+  saving: PropTypes.bool.isRequired,
 };

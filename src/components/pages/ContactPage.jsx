@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { base, app } from "../../base"; // eslint-disable-line
 import moment from "moment";
 import { toast } from "react-toastify";
+import Spinner from "../common/Spinner";
 
 export default function ContactPage() {
   const [contact, setContact] = useState({});
@@ -26,11 +27,11 @@ export default function ContactPage() {
   }
 
   function handleOnFocus(event) {
-    const { name } = event.target;
-    setErrors((prevErrors) => ({
-      ...prevErrors,
-      [name]: null,
-    }));
+    // const { name } = event.target;
+    // setErrors((prevErrors) => ({
+    //   ...prevErrors,
+    //   [name]: null,
+    // }));
   }
 
   function handleSubmit(event) {
@@ -56,6 +57,8 @@ export default function ContactPage() {
             position: toast.POSITION.TOP_LEFT,
           }
         );
+        setContact({});
+        setSaving(false);
       })
       .catch((err) => {
         toast.error(
@@ -70,6 +73,7 @@ export default function ContactPage() {
   function formIsValid() {
     const { email, name, subject, message } = contact;
     let err = false;
+    const errors = {};
 
     if (!email) {
       errors.email = "Email is required!";
@@ -87,8 +91,8 @@ export default function ContactPage() {
       errors.message = "The message is required!";
       err = true;
     }
-    console.log(!err);
     setErrors(errors);
+
     return !err;
   }
 
@@ -97,12 +101,19 @@ export default function ContactPage() {
       <main>
         <h1>Contact</h1>
         <div>
-          <ContactForm
-            onSubmit={handleSubmit}
-            onChange={handleChange}
-            errors={errors}
-            onFocus={handleOnFocus}
-          />
+          {saving ? (
+            <Spinner />
+          ) : (
+            <ContactForm
+              onSubmit={handleSubmit}
+              onChange={handleChange}
+              errors={errors}
+              onFocus={handleOnFocus}
+              contact={contact}
+              saving={saving}
+            />
+          )}
+
           <div className="contact_details">
             <div>
               <FontAwesomeIcon icon="envelope" className="contact_icon" />

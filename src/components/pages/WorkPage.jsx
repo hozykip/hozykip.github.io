@@ -53,13 +53,14 @@ function toggleMoreDetails(event) {
   const tasksDiv = parentDiv.getElementsByClassName("tasks")[0];
   const moreDetsSPan = parentDiv.querySelector("#job_details_more");
 
-  if (moreDetsSPan.innerHTML === "") {
-    moreDetsSPan.innerHTML = "Click for more details...";
-  } else {
-    moreDetsSPan.innerHTML = "";
-  }
+  // if (moreDetsSPan.innerHTML === "") {
+  //   moreDetsSPan.innerHTML = "Click for more details...";
+  // } else {
+  //   moreDetsSPan.innerHTML = "";
+  // }
 
-  tasksDiv.classList.toggle("job_more_details");
+  moreDetsSPan.innerHTML = "";
+  tasksDiv.classList.add("job_more_details");
 }
 
 export default function WorkPage() {
@@ -110,10 +111,10 @@ export default function WorkPage() {
               <FontAwesomeIcon icon="briefcase" />
             </div>
             <div className="job_title">
-              <h3 id="job_title">Digital Mold</h3>
+              <h4 id="job_title">Digital Mold</h4>
               <div />
-              <h4>Software engineer</h4>
-              <h5>6/9/ - 5/5/2020</h5>
+              <h5>Software engineer</h5>
+              <h6>6/9/ - 5/5/2020</h6>
             </div>
             <div className="job_details">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero

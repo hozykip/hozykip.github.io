@@ -17,6 +17,7 @@ import {
   faEnvelope,
   faPhone,
   faMapMarker,
+  faArrowCircleDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -29,7 +30,8 @@ library.add(
   faBriefcase,
   faEnvelope,
   faPhone,
-  faMapMarker
+  faMapMarker,
+  faArrowCircleDown
 );
 
 ReactDOM.render(

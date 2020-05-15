@@ -34,7 +34,7 @@ export default class Header extends Component {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
+        link.style.animation = `navLinkFade 0.3s ease forwards ${
           index / 7 + 0.7
         }s`;
       }
@@ -63,7 +63,7 @@ export default class Header extends Component {
                 </a>
               </li>
               <li>
-                <a href="#about" onClick={this.handleLinkClick}>
+                <a href="#about" id="about_link" onClick={this.handleLinkClick}>
                   About
                 </a>
               </li>

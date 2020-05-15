@@ -110,10 +110,10 @@ export default function WorkPage() {
               <FontAwesomeIcon icon="briefcase" />
             </div>
             <div className="job_title">
-              <h3 id="job_title">Digital Mold</h3>
+              <h4 id="job_title">Digital Mold</h4>
               <div />
-              <h4>Software engineer</h4>
-              <h5>6/9/ - 5/5/2020</h5>
+              <h5>Software engineer</h5>
+              <h6>6/9/ - 5/5/2020</h6>
             </div>
             <div className="job_details">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero

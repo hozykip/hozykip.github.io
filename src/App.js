@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 // import { Counter } from "./features/counter/Counter";
 import "./reset_css.css";
 import "./App.css";
+import "./components/pages/Portfolio.css";
 import Header from "./components/common/Header";
 import HomePage from "./components/pages/HomePage";
 import QuickContact from "./components/common/QuickContact";
@@ -35,7 +36,7 @@ function App() {
     const smooth = new SmoothScroll( // eslint-disable-line
       '.nav-links a[href*="#"], .logo a[href*="#"]',
       {
-        speed: 800,
+        speed: 600,
       }
     );
   });

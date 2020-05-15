@@ -150,7 +150,7 @@ nav.sticky {
 .page {
   min-height: 100vh;
   padding: 1.5rem 1rem;
-  color: #f8f9fa !important;
+  color: #e6e7e9 !important;
   background-color: #101010;
   /* scroll-snap-align: center; */
   /* height: 100vh; */
@@ -161,8 +161,8 @@ nav.sticky {
 }
 
 .page h1 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: 900;
   /* letter-spacing: 0.3rem; */
   margin: 0 0 0.5rem 0;
@@ -171,15 +171,15 @@ nav.sticky {
 }
 h3 {
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 h4 {
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 h5 {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 .page main {
   padding: 3rem 0 0 0;
@@ -219,6 +219,7 @@ h5 {
   width: 35%;
   text-align: center;
   padding: 1rem;
+  color: rgb(218, 213, 213);
 }
 .job_details {
   /* background-color: green; */
@@ -499,146 +500,6 @@ article {
   padding: 0.8rem 0 0 1rem;
 }
 
-/* PORTFOLIO PAGE */
-.projects_page main {
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio_container > .portfolio {
-  width: 49%;
-  margin: 0.5%;
-  height: 48vh;
-  float: left;
-  display: flex;
-  justify-content: space-around;
-}
-
-.portfolio_container > .portfolio > .front {
-  height: 48vh;
-  width: 43%;
-  /* border: solid thick red; */
-  position: absolute;
-  margin: 0.5%;
-  /* padding: 1rem; */
-  transform: perspective(1000rem) rotateY(0deg);
-  backface-visibility: hidden;
-  border-radius: 15px;
-  transition: 1.5s 0.2s;
-  cursor: pointer;
-}
-.portfolio_container > .portfolio > .back {
-  height: 48vh;
-  width: 43%;
-  /* border: solid thick yellow; */
-  position: absolute;
-  margin: 0.5%;
-  transform: perspective(1000rem) rotateY(180deg);
-  backface-visibility: hidden;
-  padding: 1rem 2rem;
-  background: #000000e8;
-  border-radius: 5px;
-  transition: 1.5s 0.2s;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  color: #b4b4b4;
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-
-.proj_title {
-  text-transform: capitalize;
-  padding: 0.3rem 0.8rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #ae4f1f;
-  text-transform: uppercase;
-  text-transform: capitalize;
-  position: relative;
-  left: -100%;
-  opacity: 0;
-}
-
-.portfolio_container > .portfolio > .back > a {
-  text-decoration: none;
-  text-transform: capitalize;
-  color: rgb(212, 204, 204);
-  background: #803a15;
-  padding: 0.3rem 0.8rem;
-  font-weight: 500;
-  transition: 0.5s;
-  border-radius: 4px;
-}
-
-.portfolio_container > .portfolio > .back > a:hover {
-  transform: translateY(-3px);
-  color: #fff;
-  background: #ae4f1f;
-  box-shadow: 0 2px 15px #000;
-}
-
-.portfolio_container > .portfolio img {
-  width: 100%;
-  height: 48vh;
-  opacity: 0.3;
-}
-
-.project_title {
-  font-size: 1.7rem;
-  font-weight: 800;
-  color: #fff;
-  position: absolute;
-  top: 45%;
-  left: 0%;
-  width: 100%;
-  text-align: center;
-}
-
-.portfolio_flip > .front {
-  animation: portfolioFlipFront 1s ease-in-out 0s normal forwards;
-}
-
-.portfolio_flip > .back {
-  animation: portfolioFlipBack 1s ease-in-out 0s normal forwards;
-}
-
-.portfolio_flip .proj_title {
-  animation: portfolioFlipTitle 0.5s ease-in-out 1s normal forwards;
-}
-
-@keyframes portfolioFlipTitle {
-  from {
-    left: -20%;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes portfolioFlipFront {
-  from {
-    transform: perspective(1000px) rotateY(0deg);
-  }
-  to {
-    transform: perspective(1000px) rotateY(-180deg);
-  }
-}
-@keyframes portfolioFlipBack {
-  from {
-    transform: perspective(1000px) rotateY(180deg);
-  }
-  to {
-    transform: perspective(1000px) rotateY(0deg);
-  }
-}
-
 /* CONTACT PAGE */
 .contact_page main > div {
   display: flex;
@@ -898,7 +759,7 @@ footer > div:nth-child(1) {
 
   article {
     width: 70%;
-    text-align: justify;
+    text-align: left;
   }
   .quick_contact img {
     width: 1.6rem;
@@ -1008,44 +869,6 @@ footer > div:nth-child(1) {
     font-size: 0.9rem;
   }
 
-  /* PORTFOLIO PAGE */
-  .portfolio_container > .portfolio > .back {
-    padding: 0.6rem 1rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
-
-  .proj_title {
-    padding: 0rem 0.3rem;
-    margin-bottom: 0.3rem;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  .portfolio_container > .portfolio > .back > a {
-    padding: 0.2rem 0.6rem;
-    font-weight: 400;
-    transition: 0.5s;
-    border-radius: 4px;
-    background: #ae4f1f;
-    color: #fff;
-  }
-
-  .portfolio_container > .portfolio > .back > a:hover {
-    box-shadow: 0 1px 10px #000;
-  }
-
-  .portfolio_container > .portfolio img {
-    width: 100%;
-    height: 48vh;
-    opacity: 0.3;
-  }
-
-  .project_title {
-    font-size: 1.4rem;
-    font-weight: 700;
-  }
   /* CONTACT PAGE */
   .contact_page main > div {
     padding: 1.2rem 0;
@@ -1130,7 +953,7 @@ footer > div:nth-child(1) {
   }
   article {
     width: 100%;
-    text-align: justify;
+    text-align: left;
   }
 
   .home_content {
@@ -1288,64 +1111,6 @@ footer > div:nth-child(1) {
 
   .text {
     font-size: 0.7rem;
-  }
-
-  /* PORTFOLIO PAGE */
-
-  .portfolio_container > .portfolio {
-    width: 90%;
-    margin: 4%;
-    height: 48vh;
-    float: left;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .portfolio_container > .portfolio > .front {
-    width: 90%;
-    padding: 0.6rem 1rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
-
-  .portfolio_container > .portfolio > .back {
-    width: 85%;
-    padding: 0.6rem 1rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
-
-  .proj_title {
-    padding: 0rem 0.3rem;
-    margin-bottom: 0.3rem;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  .portfolio_container > .portfolio > .back > a {
-    padding: 0.2rem 0.6rem;
-    font-weight: 400;
-    transition: 0.5s;
-    border-radius: 4px;
-    background: #ae4f1f;
-    color: #fff;
-  }
-
-  .portfolio_container > .portfolio > .back > a:hover {
-    box-shadow: 0 1px 10px #000;
-  }
-
-  .portfolio_container > .portfolio img {
-    width: 100%;
-    height: 48vh;
-    opacity: 0.3;
-  }
-
-  .project_title {
-    font-size: 1.4rem;
-    font-weight: 700;
   }
 
   /* CONTACT PAGE */

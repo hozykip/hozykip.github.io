@@ -63,7 +63,7 @@ export default class Header extends Component {
                 </a>
               </li>
               <li>
-                <a href="#about" onClick={this.handleLinkClick}>
+                <a href="#about" id="about_link" onClick={this.handleLinkClick}>
                   About
                 </a>
               </li>

@@ -34,9 +34,9 @@ function App() {
 
     //implement smooth scroll using smooth-scroll library
     const smooth = new SmoothScroll( // eslint-disable-line
-      '.nav-links a[href*="#"], .logo a[href*="#"]',
+      '.nav-links a[href*="#"], .logo a[href*="#"], #home_about_link',
       {
-        speed: 600,
+        speed: 800,
       }
     );
   });

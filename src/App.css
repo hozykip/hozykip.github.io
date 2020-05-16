@@ -222,7 +222,7 @@ h5 {
   background-color: #382a22b8;
   opacity: 0;
   position: absolute;
-  left: 35%;
+  left: 40%;
 }
 .job_panel {
   padding: 0.5rem;
@@ -235,14 +235,14 @@ h5 {
 }
 .job_title {
   /* background-color: tomato; */
-  width: 35%;
+  width: 40%;
   text-align: center;
   padding: 1rem;
   color: rgb(218, 213, 213);
 }
 .job_details {
   /* background-color: green; */
-  width: 65%;
+  width: 60%;
   text-align: left;
   padding: 1rem 2rem;
 }
@@ -260,7 +260,7 @@ h5 {
   background-color: #d45e07cf;
   color: #131010;
   position: relative;
-  left: 35%;
+  left: 40%;
   cursor: pointer;
   margin: 1.6rem 0;
 }
@@ -279,6 +279,9 @@ h5 {
 
 .job_details > .tasks > h4 {
   color: #d45e07cf;
+}
+.job_details .task_title {
+  color: #b1511d !important;
 }
 
 .job_details > .tasks li {
@@ -649,7 +652,7 @@ footer > div:nth-child(1) {
     width: 90%;
   }
   .job_title {
-    width: 35%;
+    width: 40%;
     text-align: center;
     padding: 0.7rem;
   }
@@ -657,7 +660,7 @@ footer > div:nth-child(1) {
   .job_icon {
     width: 1.5rem;
     height: 1.5rem;
-    left: 35%;
+    left: 40%;
     margin: 1.5rem 0;
   }
 
@@ -811,7 +814,7 @@ footer > div:nth-child(1) {
   }
 
   .job_title {
-    width: 35%;
+    width: 100%;
     text-align: center;
     padding: 0.7rem;
   }
@@ -819,8 +822,19 @@ footer > div:nth-child(1) {
   .job_icon {
     width: 1.5rem;
     height: 1.5rem;
-    left: 35%;
+    left: 50%;
     margin: 1.2rem 0;
+  }
+
+  .job_panel {
+    flex-direction: column;
+  }
+
+  .job_details {
+    width: 100%;
+    padding: 0.5rem;
+    text-justify: newspaper;
+    text-align: justify;
   }
 
   /* ABOUT PAGE */

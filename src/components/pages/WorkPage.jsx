@@ -81,20 +81,28 @@ export default function WorkPage() {
             <div className="job_title">
               <h3 id="job_title">Digital Mold</h3>
               <div />
-              <h4>Software engineer</h4>
-              <h5>6/9/ - 5/5/2020</h5>
+              <h4>Senior PHP Engineer</h4>
+              <h5>9/2019 - to date</h5>
             </div>
             <div className="job_details">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-              iste asperiores incidunt esse temporibus reiciendis aliquid sunt.
-              Ipsa, dolor quaerat.
+              My current role involves working with a team that develops and
+              modifies custom applications for clients.
               <div className="tasks">
-                <h4>Tasks</h4>
+                <h5 className="task_title">Tasks</h5>
                 <ul>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
+                  <li>Understanding and modeling client requirements</li>
+                  <li>
+                    Extending existing client applications such as adding custom
+                    WordPress plugins to process customized client data
+                  </li>
+                  <li>
+                    Coding various processor-intensive and data-intensive web
+                    applications and configuring APIs for mobile services.
+                  </li>
+                  <li>
+                    Hosting, updating, and maintaining client applications on
+                    CPanel, and DigitalOcean hosted domains.
+                  </li>
                 </ul>
               </div>
               <span id="job_details_more"> Click for more details...</span>
@@ -111,22 +119,21 @@ export default function WorkPage() {
               <FontAwesomeIcon icon="briefcase" />
             </div>
             <div className="job_title">
-              <h4 id="job_title">Digital Mold</h4>
+              <h4 id="job_title">BorderOrder ltd</h4>
               <div />
-              <h5>Software engineer</h5>
-              <h6>6/9/ - 5/5/2020</h6>
+              <h5>Android devloper/graphics designer</h5>
+              <h6>8/2018 - 5/2019</h6>
             </div>
             <div className="job_details">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-              iste asperiores incidunt esse temporibus reiciendis aliquid sunt.
-              Ipsa, dolor quaerat.
+              I started working here as an Android developer intern and was
+              later promoted to junior developer role. We mostly used
+              Android(Java), MySQL and Firebase tools
               <div className="tasks">
-                <h4>Tasks</h4>
+                <h5 className="task_title">Tasks</h5>
                 <ul>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
+                  <li>Developing the company’s Android applications</li>
+                  <li>Creating advertisement posters using Photoshop.</li>
+                  <li>Updating and maintaining the company website</li>
                 </ul>
               </div>
               <span id="job_details_more"> Click for more details...</span>
@@ -143,22 +150,25 @@ export default function WorkPage() {
               <FontAwesomeIcon icon="briefcase" />
             </div>
             <div className="job_title">
-              <h3 id="job_title">Digital Mold</h3>
+              <h3 id="job_title">
+                Kerio Valley Development Authority <br />
+                (KVDA)
+              </h3>
               <div />
-              <h4>Software engineer</h4>
-              <h5>6/9/ - 5/5/2020</h5>
+              <h4>ICT Attache</h4>
+              <h5>2/2017 - 4/2017</h5>
             </div>
             <div className="job_details">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-              iste asperiores incidunt esse temporibus reiciendis aliquid sunt.
-              Ipsa, dolor quaerat.
+              Worked here during my industrial attachment. Most of the work was
+              hardware and network related, but I also had the chance to
+              maintain the organization's website, and to interract with the
+              biometric system
               <div className="tasks">
-                <h4>Tasks</h4>
+                <h5 className="task_title">Tasks</h5>
                 <ul>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
+                  <li>Computer servicing</li>
+                  <li>Basic network troubleshooting</li>
+                  <li>Software installation and maintenance</li>
                 </ul>
               </div>
               <span id="job_details_more"> Click for more details...</span>

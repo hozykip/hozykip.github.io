@@ -62,13 +62,13 @@ export default function AboutPage() {
                       r="50"
                       style={{
                         stroke: "#55b36e",
-                        strokeDashoffset: "calc(310 - (310 * 85) / 100)",
+                        strokeDashoffset: "calc(310 - (310 * 80) / 100)",
                       }}
                     />
                   </svg>
                   <div className="number">
                     <h2 className="num_percentage">
-                      85<span>%</span>
+                      80<span>%</span>
                     </h2>
                   </div>
                 </div>
@@ -112,13 +112,13 @@ export default function AboutPage() {
                       r="50"
                       style={{
                         stroke: "#4c6e94",
-                        strokeDashoffset: "calc(310 - (310 * 80) / 100)",
+                        strokeDashoffset: "calc(310 - (310 * 75) / 100)",
                       }}
                     />
                   </svg>
                   <div className="number">
                     <h2 className="num_percentage">
-                      80<span>%</span>
+                      75<span>%</span>
                     </h2>
                   </div>
                 </div>
@@ -187,13 +187,13 @@ export default function AboutPage() {
                       r="50"
                       style={{
                         stroke: "#105652",
-                        strokeDashoffset: "calc(310 - (310 * 90) / 100)",
+                        strokeDashoffset: "calc(310 - (310 * 70) / 100)",
                       }}
                     />
                   </svg>
                   <div className="number">
                     <h2 className="num_percentage">
-                      90<span>%</span>
+                      70<span>%</span>
                     </h2>
                   </div>
                 </div>
@@ -262,13 +262,13 @@ export default function AboutPage() {
                       r="50"
                       style={{
                         stroke: "#712b9ecc",
-                        strokeDashoffset: "calc(310 - (310 * 75) / 100)",
+                        strokeDashoffset: "calc(310 - (310 * 85) / 100)",
                       }}
                     />
                   </svg>
                   <div className="number">
                     <h2 className="num_percentage">
-                      75<span>%</span>
+                      85<span>%</span>
                     </h2>
                   </div>
                 </div>

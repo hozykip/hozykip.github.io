@@ -32,10 +32,13 @@ export default function ProjectsPage() {
             <div className="back">
               <div>
                 <h2 className="proj_title">Sura Images</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quaerat quam aspernatur quia rem consequuntur excepturi.
-                </p>
+                <div>
+                  <p>
+                    A stock photography system that handles images and video
+                    processing.
+                  </p>
+                  <p>Build on Symfony, jQuery & MySQL</p>
+                </div>
               </div>
 
               <a
@@ -69,8 +72,10 @@ export default function ProjectsPage() {
                   Africa Fairtrade Convention website
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quaerat quam aspernatur quia rem consequuntur excepturi.
+                  <p>
+                    Wordpress re-design of the Africa Fairtrade Convention
+                    website
+                  </p>
                 </p>
               </div>
               <a
@@ -104,10 +109,10 @@ export default function ProjectsPage() {
                 <h2 className="proj_title">
                   Africa Fairtrade Convention Ngoma Portal
                 </h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quaerat quam aspernatur quia rem consequuntur excepturi.
-                </p>
+                <div>
+                  <p>An awards submissions portal.</p>
+                  <p>Build on Symfony, jQuery & MySQL</p>
+                </div>
               </div>
               <a
                 href="https://ngoma.africafairtradeconvention.com/login"

@@ -20,19 +20,29 @@ export default function AboutPage() {
           </div>
           <article>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              voluptatibus voluptate laboriosam quibusdam inventore, atque aut
-              in velit at exercitationem quis animi sint eos magnam! In atque,
-              enim magnam ea voluptatem est. Et, sequi vero temporibus laborum
-              adipisci ullam culpa?
+              Hosea is a bright and ambitious software developer whose drive is
+              in understanding client needs and developing extensive
+              production-ready and well-tested applications. Starting as an
+              android developer & graphics designer back in August 2018, I
+              gained lots of knowledge in mobile app development, project
+              management, and problem-solving. I now work as a senior backend
+              developer where I mostly use PHP and some of its frameworks,
+              particularly Symfony and WordPress content manager.
             </p>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-              ipsa recusandae quae aspernatur, et id. Repellat deserunt
-              obcaecati, commodi totam nobis molestiae quae nemo quas nihil
-              recusandae beatae quam sunt natus, inventore provident neque
-              quisquam iure esse facere quod fuga veritatis ipsam! Nihil
-              praesentium, accusamus nobis laborum autem modi iusto.
+              My passion is to create unambiguously simplistic web systems to
+              solve complex problems with minimal technical overhead for the
+              client or user. I also advise on industry best practices and
+              standards that ensure the resulting system is efficient and secure
+            </p>
+            <p>
+              If you are in need of a web or mobile application don't hesitate
+              to contact me via the links on the left, or send a message using
+              the{" "}
+              <a href="/#contact" id="contact_link">
+                contact form
+              </a>
+              . I'll be glad to receiveyour feedback.
             </p>
           </article>
         </div>

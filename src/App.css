@@ -834,7 +834,7 @@ footer > div:nth-child(1) {
     width: 100%;
     padding: 0.5rem;
     text-justify: newspaper;
-    text-align: justify;
+    text-align: left;
   }
 
   /* ABOUT PAGE */
@@ -1105,7 +1105,7 @@ footer > div:nth-child(1) {
     width: 100%;
     padding: 0.5rem;
     text-justify: newspaper;
-    text-align: justify;
+    text-align: left;
   }
 
   h3 {

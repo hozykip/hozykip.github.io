@@ -119,7 +119,7 @@ export default function WorkPage() {
               <FontAwesomeIcon icon="briefcase" />
             </div>
             <div className="job_title">
-              <h4 id="job_title">BorderOrder ltd</h4>
+              <h4 id="job_title">Border Order ltd</h4>
               <div />
               <h5>Android devloper/graphics designer</h5>
               <h6>8/2018 - 5/2019</h6>

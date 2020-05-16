@@ -140,7 +140,7 @@ export default function ContactPage() {
       </main>
       <footer>
         <div>Handcrafted by me using HTML5, CSS3, React & Firebase</div>
-        <div>Copyright &copy; Hosea Kipruto 2020</div>
+        <div>&copy; 2020 Hosea Kipruto </div>
       </footer>
     </section>
   );

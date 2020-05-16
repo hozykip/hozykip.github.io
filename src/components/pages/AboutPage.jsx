@@ -42,7 +42,7 @@ export default function AboutPage() {
               <a href="/#contact" id="contact_link">
                 contact form
               </a>
-              . I'll be glad to receiveyour feedback.
+              . I'll be glad to receive your feedback.
             </p>
           </article>
         </div>

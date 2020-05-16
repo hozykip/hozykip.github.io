@@ -50,7 +50,7 @@ export default class Header extends Component {
           <nav>
             <div className="logo">
               <h2 id="logoTitle">
-                <a href="/" onClick={this.handleLinkClick}>
+                <a href="#home" onClick={this.handleLinkClick}>
                   Hozy
                 </a>
               </h2>

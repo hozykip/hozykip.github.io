@@ -15,6 +15,7 @@ import ProjectsPage from "./components/pages/ProjectsPage";
 import ContactPage from "./components/pages/ContactPage";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Loader from "./components/common/Loader";
 
 function App() {
   useEffect(() => {
@@ -42,6 +43,7 @@ function App() {
   });
   return (
     <div className="App">
+      <Loader />
       <Header />
       <HomePage />
       <QuickContact />

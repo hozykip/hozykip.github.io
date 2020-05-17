@@ -3,9 +3,9 @@ import "./Loader.css";
 import $ from "jquery";
 
 export default function Loader() {
-  window.addEventListener("load", function () {
-    $("#work-in-progress").fadeOut(100);
-  });
+  //   window.addEventListener("load", function () {
+  //     $("#work-in-progress").fadeOut(100);
+  //   });
 
   document.onreadystatechange = function (e) {
     if (document.readyState === "interactive") {
@@ -26,7 +26,8 @@ export default function Loader() {
       document.getElementById("progress_width").value = prog_width;
       $("#progress").animate({ width: prog_width + "%" }, 10, function () {
         if (document.getElementById("progress").style.width === "100%") {
-          $(".progress").fadeOut("slow");
+          // $(".progress").fadeOut("slow");
+          $("#work-in-progress").fadeOut(100);
         }
       });
     } else {

@@ -19,7 +19,7 @@ export default function Loader() {
   function check_element(ele) {
     let all = document.getElementsByTagName("*");
     let totalele = all.length;
-    let per_inc = 100 / all.length;
+    let per_inc = 100 / totalele;
     if ($(ele).on()) {
       let prog_width =
         per_inc + Number(document.getElementById("progress_width").value);

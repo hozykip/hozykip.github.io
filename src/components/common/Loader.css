@@ -16,23 +16,23 @@
   top: 0;
   left: 0;
   width: 0%;
-  height: 1vh;
+  height: 0.5vh;
   background-color: #ff9700;
 }
 
 .work_spinner {
   background-color: transparent;
-  border-top: 0.7em solid rgba(255, 151, 0, 0.2);
-  border-right: 0.7em solid rgba(255, 151, 0, 0.2);
-  border-bottom: 0.7em solid rgba(255, 151, 0, 0.2);
-  border-left: 0.7em solid #ff9700;
+  border-top: 1em solid rgba(255, 151, 0, 0.2);
+  border-right: 1em solid rgba(255, 151, 0, 0.2);
+  border-bottom: 1em solid rgba(255, 151, 0, 0.2);
+  border-left: 1em solid #ff9700;
   /* opacity: 0.9; */
   /* border-left: 5px solid rgba(0, 0, 0, 0); */
   border-radius: 50%;
   /* -webkit-box-shadow: 0 0 35px rgb(226, 123, 27);
   box-shadow: 0 0 35px rgb(226, 123, 27); */
-  width: 6em;
-  height: 6em;
+  width: 4em;
+  height: 4em;
   -moz-animation: spin 1s infinite linear;
   -webkit-animation: spin 1s infinite linear;
   -o-animation: spin 1s infinite linear;

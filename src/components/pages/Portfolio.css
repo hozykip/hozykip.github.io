@@ -33,7 +33,7 @@
     flex: 2;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background: #000000e8;
+    background: #1f1d1de8;
     padding: 1%;
     word-wrap: break-word;
     max-width: 100%;
@@ -50,7 +50,7 @@
   .proj_title {
     text-transform: capitalize;
     padding: 0.3rem 0.8rem;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     font-weight: 700;
     font-size: 1.2rem;
     color: #c2bbb8;

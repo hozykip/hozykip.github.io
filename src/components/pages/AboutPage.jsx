@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function AboutPage() {
   return (
@@ -32,18 +33,32 @@ export default function AboutPage() {
             <p>
               My passion is to create unambiguously simplistic web systems to
               solve complex problems with minimal technical overhead for the
-              client or user. I also advise on industry best practices and
-              standards that ensure the resulting system is efficient and secure
+              user. I also advise on industry best practices and standards that
+              ensure the resulting system is efficient and secure
             </p>
             <p>
-              If you are in need of a web or mobile application don't hesitate
-              to contact me via the links on the left, or send a message using
-              the{" "}
+              Contact me via the links on the left, or send a message using the{" "}
               <a href="/#contact" id="contact_link">
                 contact form
               </a>
               . I'll be glad to receive your feedback.
             </p>
+
+            <div className="school_div">
+              <a
+                href="https://www.chuka.ac.ke/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>
+                  <FontAwesomeIcon icon="graduation-cap" />
+                </h3>
+                <div>
+                  <h4>Chuka University</h4>
+                  <h5>Bachelor of Science in Applied Computer Science</h5>
+                </div>
+              </a>
+            </div>
           </article>
         </div>
 

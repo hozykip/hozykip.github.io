@@ -18,6 +18,7 @@ import {
   faPhone,
   faMapMarker,
   faArrowCircleDown,
+  faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -31,7 +32,8 @@ library.add(
   faEnvelope,
   faPhone,
   faMapMarker,
-  faArrowCircleDown
+  faArrowCircleDown,
+  faGraduationCap
 );
 
 ReactDOM.render(

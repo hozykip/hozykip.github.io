@@ -693,6 +693,19 @@ footer > div:nth-child(1) {
   text-align: center;
 }
 
+.school_div {
+  /* margin: 0.7em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.school_div a {
+  text-decoration: none;
+  color: #8b4119;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1210px) {

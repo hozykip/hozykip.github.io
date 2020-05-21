@@ -126,14 +126,14 @@ export default function WorkPage() {
             </div>
             <div className="job_details">
               I started working here as an Android developer intern and was
-              later promoted to junior developer role. We mostly used
-              Android(Java), MySQL and Firebase tools
+              later promoted to a junior developer role. We mostly used
+              Android(Java), MySQL and Firebase for development.
               <div className="tasks">
                 <h5 className="task_title">Tasks</h5>
                 <ul>
                   <li>Developing the company’s Android applications</li>
                   <li>Creating advertisement posters using Photoshop.</li>
-                  <li>Updating and maintaining the company website</li>
+                  <li>Maintaining the company website</li>
                 </ul>
               </div>
               <span id="job_details_more"> Click for more details...</span>

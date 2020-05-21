@@ -72,10 +72,7 @@ export default function ProjectsPage() {
                   Africa Fairtrade Convention website
                 </h2>
                 <p>
-                  <p>
-                    A wordpress re-design of the Africa Fairtrade Convention
-                    website
-                  </p>
+                  <p>A wordpress re-design</p>
                 </p>
               </div>
               <a

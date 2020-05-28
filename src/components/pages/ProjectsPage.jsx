@@ -38,6 +38,7 @@ export default function ProjectsPage() {
                     processing.
                   </p>
                   <p>Build on Symfony, jQuery & MySQL</p>
+                  <p>Leverages on image and video processing libraries</p>
                 </div>
               </div>
 

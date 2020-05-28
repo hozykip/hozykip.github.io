@@ -201,6 +201,55 @@ export default function AboutPage() {
                       cy="70"
                       r="50"
                       style={{
+                        stroke: "#1881faad",
+                        strokeDashoffset: "calc(310 - (310 * 80) / 100)",
+                      }}
+                    />
+                  </svg>
+                  <div className="number">
+                    <h2 className="num_percentage">
+                      80<span>%</span>
+                    </h2>
+                  </div>
+                </div>
+                <h2 className="text">Python</h2>
+              </div>
+            </div>
+            {/* <div className="card">
+              <div className="box">
+                <div className="percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="50" />
+                    <circle
+                      cx="70"
+                      cy="70"
+                      r="50"
+                      style={{
+                        stroke: "#1881faad",
+                        strokeDashoffset: "calc(310 - (310 * 70) / 100)",
+                      }}
+                    />
+                  </svg>
+                  <div className="number">
+                    <h2 className="num_percentage">
+                      70<span>%</span>
+                    </h2>
+                  </div>
+                </div>
+                <h2 className="text">Django</h2>
+              </div>
+            </div> */}
+
+            <div className="card">
+              <div className="box">
+                <div className="percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="50" />
+                    <circle
+                      cx="70"
+                      cy="70"
+                      r="50"
+                      style={{
                         stroke: "#105652",
                         strokeDashoffset: "calc(310 - (310 * 70) / 100)",
                       }}

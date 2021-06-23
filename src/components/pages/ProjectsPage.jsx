@@ -81,7 +81,7 @@ export default function ProjectsPage() {
             subTitle="Member Self Service"
             alt = "Liaison Pension"
             link="https://pensiontest.liaisongroup.net/"
-            img="images/portfolio/Liaison Admin Dashboard.png"
+            img="images/portfolio/Liaison Admin Dashboard.PNG"
             description="Pension Member, Trustee and Sponsor portal built on ASP.NET MVC & Dynamics NAV"         
           />
           

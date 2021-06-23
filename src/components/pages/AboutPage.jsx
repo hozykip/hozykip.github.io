@@ -26,9 +26,9 @@ export default function AboutPage() {
               production-ready and well-tested applications. Starting as an
               android developer & graphics designer back in August 2018, I
               gained lots of knowledge in mobile app development, project
-              management, and problem-solving. I now work as a senior backend
-              developer where I mostly use PHP and some of its frameworks,
-              particularly Symfony and WordPress content manager.
+              management, and problem-solving. I now work as a Technical Consultant where I mostly develop and research on web and mobile applications.
+              {/* <p>developer where I mostly use PHP and some of its frameworks,
+              particularly Symfony and WordPress content manager.</p> */}
             </p>
             <p>
               My passion is to create unambiguously simplistic web systems to
@@ -163,6 +163,31 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <h2 className="text">Symfony</h2>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="box">
+                <div className="percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="50" />
+                    <circle
+                      cx="70"
+                      cy="70"
+                      r="50"
+                      style={{
+                        stroke: "#8c5865",
+                        strokeDashoffset: "calc(310 - (310 * 90) / 100)",
+                      }}
+                    />
+                  </svg>
+                  <div className="number">
+                    <h2 className="num_percentage">
+                      90<span>%</span>
+                    </h2>
+                  </div>
+                </div>
+                <h2 className="text">C#</h2>
               </div>
             </div>
 

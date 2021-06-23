@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectCard from "../common/ProjectCard";
 
 function handlePortfolioCLick(event) {
   const flippedElements = document.querySelectorAll(".portfolio_flip");
@@ -19,108 +20,73 @@ export default function ProjectsPage() {
       <main>
         <h1>Portfolio</h1>
         <div className="portfolio_container">
-          <div
-            className="portfolio"
+          
+          <ProjectCard 
             onClick={handlePortfolioCLick}
             onMouseOver={handlePortfolioCLick}
             onMouseLeave={handleMouseOut}
-          >
-            <div className="front">
-              <img src="images/portfolio/sura-portfolio.png" alt="SuraImages" />
-              <div className="project_title">Sura Images</div>
-            </div>
-            <div className="back">
-              <div>
-                <h2 className="proj_title">Sura Images</h2>
-                <div>
-                  <p>
-                    A stock photography system that handles images and video
-                    processing.
-                  </p>
-                  <p>Build on Symfony, jQuery & MySQL</p>
-                  <p>Leverages on image and video processing libraries</p>
-                </div>
-              </div>
+            frontTitle="Sura Images"
+            backTitle="Sura Images"
+            alt = "Sura Images"
+            link="https://suraimages.com"
+            img="images/portfolio/sura-portfolio.png"
+            description="A stock photography system that handles images and video processing. Build on Symfony, jQuery & MySQL. Leverages on image and video processing libraries."         
+          />
 
-              <a
-                href="https://suraimages.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Check out
-              </a>
-            </div>
-          </div>
-          <div
-            className="portfolio"
+          <ProjectCard 
             onClick={handlePortfolioCLick}
             onMouseOver={handlePortfolioCLick}
             onMouseLeave={handleMouseOut}
-          >
-            <div className="front">
-              <img
-                src="images/portfolio/afc-portfolio.png"
-                alt="Africa Fairtrade Convention website"
-              />
-              <div className="project_title">
-                {" "}
-                Africa Fairtrade Convention website
-              </div>
-            </div>
-            <div className="back">
-              <div>
-                <h2 className="proj_title">
-                  Africa Fairtrade Convention website
-                </h2>
-                <p>
-                  <p>A wordpress re-design</p>
-                </p>
-              </div>
-              <a
-                href="https://africafairtradeconvention.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Check out
-              </a>
-            </div>
-          </div>
+            frontTitle="Africa Fairtrade Convention website"
+            backTitle="Africa Fairtrade Convention website"
+            alt = "Africa Fairtrade Convention website"
+            link="https://africafairtradeconvention.com/"
+            img="images/portfolio/afc-portfolio.png"
+            description="A wordpress re-design"         
+          />
 
-          <div
-            className="portfolio"
+
+
+          <ProjectCard 
             onClick={handlePortfolioCLick}
             onMouseOver={handlePortfolioCLick}
             onMouseLeave={handleMouseOut}
-          >
-            <div className="front">
-              <img
-                src="images/portfolio/ngoma2.png"
-                alt="Africa Fairtrade Convention Ngoma Portal"
-              />
-              <div className="project_title">
-                <span>Africa Fairtrade Convention</span>
-                <span>Ngoma Awards Portal</span>
-              </div>
-            </div>
-            <div className="back">
-              <div>
-                <h2 className="proj_title">
-                  Africa Fairtrade Convention Ngoma Portal
-                </h2>
-                <div>
-                  <p>An awards submissions portal.</p>
-                  <p>Build on Symfony, jQuery & MySQL</p>
-                </div>
-              </div>
-              <a
-                href="https://ngoma.africafairtradeconvention.com/login"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Check out
-              </a>
-            </div>
-          </div>
+            frontTitle="Africa Fairtrade Convention Ngoma Portal"
+            backTitle="Africa Fairtrade Convention, Ngoma Awards Portal"
+            alt = "Africa Fairtrade Convention Ngoma Portal"
+            link="https://ngoma.africafairtradeconvention.com/login"
+            img="images/portfolio/ngoma2.png"
+            description="An awards submissions portal. Build on Symfony, jQuery & MySQL"         
+          />
+
+          <ProjectCard 
+            onClick={handlePortfolioCLick}
+            onMouseOver={handlePortfolioCLick}
+            onMouseLeave={handleMouseOut}
+            frontTitle="Moi University Pension Portal"
+            backTitle="Moi University Pension Portal"
+            subTitle="Member Self Service"
+            alt = "MUPS Pension"
+            link="https://portal.mups.co.ke/"
+            img="images/portfolio/MUPS Screenshot.png"
+            description="Pension Member, Trustee and Sponsor portal built on ASP.NET MVC & Dynamics NAV"         
+          />
+          
+          <ProjectCard 
+            onClick={handlePortfolioCLick}
+            onMouseOver={handlePortfolioCLick}
+            onMouseLeave={handleMouseOut}
+            frontTitle="Liaison Pension Portal"
+            backTitle="Liaison Pension Portal"
+            subTitle="Member Self Service"
+            alt = "Liaison Pension"
+            link="https://pensiontest.liaisongroup.net/"
+            img="images/portfolio/Liaison Admin Dashboard.png"
+            description="Pension Member, Trustee and Sponsor portal built on ASP.NET MVC & Dynamics NAV"         
+          />
+          
+
+
         </div>
       </main>
     </section>

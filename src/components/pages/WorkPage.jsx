@@ -69,6 +69,38 @@ export default function WorkPage() {
       <main>
         <h1 className="page_title">Job</h1>
         <div className="jobs_container">
+
+          
+          <div
+            className="job_panel"
+            onMouseOver={showMoreDetails}
+            onMouseLeave={hideMoreDetails}
+            onClick={toggleMoreDetails}
+          >
+            <div className="job_icon">
+              <FontAwesomeIcon icon="briefcase" />
+            </div>
+            <div className="job_title">
+              <h3 id="job_title">Agile Business Solutions Ltd.</h3>
+              <div />
+              <h4>Technical Consultant - Web and Mobile Applications</h4>
+              <h5>10/2020 - to date</h5>
+            </div>
+            <div className="job_details">
+              Integrating Web applications on NAV and Business Central.
+              <div className="tasks">
+                <h5 className="task_title">Tasks</h5>
+                <ul>
+                  <li>Business Central integration</li>
+                  <li>Payment integration</li>
+                  <li>Mobile development</li>
+                </ul>
+              </div>
+              <span id="job_details_more"> Click for more details...</span>
+            </div>
+          </div>
+
+
           <div
             className="job_panel"
             onMouseOver={showMoreDetails}
@@ -82,7 +114,7 @@ export default function WorkPage() {
               <h3 id="job_title">Digital Mold</h3>
               <div />
               <h4>Senior PHP Engineer</h4>
-              <h5>9/2019 - to date</h5>
+              <h5>9/2019 - 10/2020</h5>
             </div>
             <div className="job_details">
               My current role involves working with a team that develops and
@@ -108,6 +140,8 @@ export default function WorkPage() {
               <span id="job_details_more"> Click for more details...</span>
             </div>
           </div>
+
+
 
           <div
             className="job_panel"
@@ -139,6 +173,8 @@ export default function WorkPage() {
               <span id="job_details_more"> Click for more details...</span>
             </div>
           </div>
+
+
 
           <div
             className="job_panel"
@@ -174,6 +210,9 @@ export default function WorkPage() {
               <span id="job_details_more"> Click for more details...</span>
             </div>
           </div>
+
+
+
         </div>
       </main>
     </section>

@@ -87,13 +87,14 @@ export default function WorkPage() {
               <h5>10/2020 - to date</h5>
             </div>
             <div className="job_details">
-              Integrating Web applications on NAV and Business Central.
+              Integrating Web applications on Dynamics NAV and Business Central.
               <div className="tasks">
                 <h5 className="task_title">Tasks</h5>
                 <ul>
-                  <li>Business Central integration</li>
+                  <li>Business Central & Dynamics NAV integration to web and mobile applications</li>
+                  <li>Web API development</li>
                   <li>Payment integration</li>
-                  <li>Mobile development</li>
+                  <li>Web and mobile apps development</li>
                 </ul>
               </div>
               <span id="job_details_more"> Click for more details...</span>
@@ -117,8 +118,8 @@ export default function WorkPage() {
               <h5>9/2019 - 10/2020</h5>
             </div>
             <div className="job_details">
-              My current role involves working with a team that develops and
-              modifies custom applications for clients.
+              My role involved working with a team that develop and
+              modify custom applications for clients.
               <div className="tasks">
                 <h5 className="task_title">Tasks</h5>
                 <ul>
